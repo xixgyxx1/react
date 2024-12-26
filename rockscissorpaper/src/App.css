@@ -1,0 +1,64 @@
+.line{
+  border:1px solid red;
+}
+.line-main{
+  border:5px solid blue;
+}
+.box-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.box{
+  width: 500px;
+  height: 500px;
+  border: 5px solid transparent;
+  text-align:center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-container{
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+
+.img-item{
+  width: 300px;
+  height: 300px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: lightgray;
+}
+
+.win {
+  border: 5px solid red;
+}
+
+.win-result{
+  color:red
+}
+
+.lose {
+  border: 5px solid green;
+}
+.lose-result{
+  color:green;
+}
+
+
+.tie {
+  border: 5px solid black;
+
+}
+.tie-result{
+  color:black
+}
