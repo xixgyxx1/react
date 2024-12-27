@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  let counter = 0;
+  const [counter2, setCounter2] = useState(0);
+  const [value, setValue] = useState(0);
+  const increase = () => {
+    counter = counter +1;
+    setCounter2(counter2+1);
+    setValue(value+2)
+    console.log("counter",counter,"state",counter2)
+  }
+  useEffect(()=>{
+    console.log("useEffect1 Fire")
+  },[])
+
+  useEffect(()=>{
+    console.log("userEffect2 fire",counter2,value)
+  },[counter2,value]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {console.log("render")}
+      <div>{counter}</div>
+      <div>state:{counter2}</div>
+      <button onClick={increase}>클릭!</button>
+     
     </div>
   );
 }
