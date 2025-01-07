@@ -1,0 +1,48 @@
+.login-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.hnm-logo {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list li {
+  padding: 10px;
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
+
+.find-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.find-button {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin: 10px;
+}
+
+.product-img {
+  display: flex;
+  justify-content: flex-end;
+}
